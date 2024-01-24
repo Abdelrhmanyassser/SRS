@@ -38,7 +38,7 @@ Saudi Retina Group (SRG) is a scientific retina-specialized group under the umbr
 - [License](#14-license)
    
 
-# 2-installation
+# 2-Package uses
 
 ### **First:** Laravel UI
 Laravel provided bootstrap scaffolding located in the `laravel/ui` Composer package, which may be installed using Composer. Now we have to install laravel/ui package using the following command.
@@ -55,11 +55,17 @@ php artisan ui bootstrap --auth
 
 ****
 ### **Secound:** QR Code Package
-Get into the command prompt, type the given command, and begin installing the [simplesoftwareio/simple-qrcode](https://github.com/Bacon/BaconQrCode) package; it profoundly helps create various kinds of QR codes in the laravel app.
+Get into the command prompt, type the given command, and begin installing the [simplesoftwareio/simple-qrcode](https://github.com/Bacon/BaconQrCode) package; it profoundly helps create various kinds of QR codes in the Laravel app.
 
 ****
-### **third:** QR Code Package
-Get into the command prompt, type the given command, and begin installing the sasa package; it profoundly helps create various kinds of QR codes in the laravel app.
+### **third:** Excel Extract
+- use to extract all abstracts as a file Excel, [Laravel-excel-documentation](https://docs.laravel-excel.com/3.1/getting-started/).
+
+****
+### **third:** JWT authentication
+- use to extract all abstracts as a file Excel, [Laravel-excel-documentation](https://docs.laravel-excel.com/3.1/getting-started/).
+
+
 
 
 

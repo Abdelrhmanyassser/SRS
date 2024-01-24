@@ -4,7 +4,7 @@ Saudi Retina Group (SRG) is a scientific retina-specialized group under the umbr
 
 ## Key Features:
 
-- dashboard (managing tool) for website
+- dashboard (managing tool) for the website
 - Dynamic symposium which has: 
   1. Abstract submission
   2. 

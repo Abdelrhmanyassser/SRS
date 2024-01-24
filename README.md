@@ -52,14 +52,14 @@ Run the bellow command to generate login / register scaffolding.
 ```bash
 php artisan ui bootstrap --auth
 ```
-****
 
+****
 ### **Secound:** QR Code Package
 Get into the command prompt, type the given command, and begin installing the [simplesoftwareio/simple-qrcode](https://github.com/Bacon/BaconQrCode) package; it profoundly helps create various kinds of QR codes in the laravel app.
 
-```bash
-composer require simplesoftwareio/simple-qrcode
-```
+****
+### **third:** QR Code Package
+Get into the command prompt, type the given command, and begin installing the sasa package; it profoundly helps create various kinds of QR codes in the laravel app.
 
 
 

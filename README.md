@@ -40,7 +40,7 @@ Saudi Retina Group (SRG) is a scientific retina-specialized group under the umbr
 
 # 2-installation
 
-## **First:** Laravel UI
+### **First:** Laravel UI
 Laravel provided bootstrap scaffolding located in the `laravel/ui` Composer package, which may be installed using Composer. Now we have to install laravel/ui package using the following command.
 ```bash
 composer require laravel/ui
@@ -54,6 +54,12 @@ php artisan ui bootstrap --auth
 ```
 ****
 
+### **Secound:** QR Code Package
+Get into the command prompt, type the given command, and begin installing the [simplesoftwareio/simple-qrcode](https://github.com/Bacon/BaconQrCode) package; it profoundly helps create various kinds of QR codes in the laravel app.
+
+```bash
+composer require simplesoftwareio/simple-qrcode
+```
 
 
 

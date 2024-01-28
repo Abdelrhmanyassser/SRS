@@ -88,16 +88,17 @@ Get into the command prompt, type the given command, and begin installing the [s
            - **Second:** Takes only `ecom` or `recurring`
 
 - How did handle the payment functions in the project?
-     - in the trait `PaymentTrait`  
-     1. function `paymentPage()` is used to get the payment page
+     - In the trait `PaymentTrait`  
+     1. Function `paymentPage()` is used to get the payment page
            - called if from enroll courses `CourseController`->`enroll()` or join srs `PaymentController`->`joinSRSPayment()`.
            - **Note:** The `card_description` used for taking a string like "srs,course,2" means: srs: to join srs, course: enroll course id = 2.
-     2. function `respondMethodPaymentApi()` is a callback API (server to server)
+     - In the `PaymentController`
+     2. Function `respondMethodPaymentApi()` is a callback API (server to server)
            - Save the transaction details with all status
            -  split the description as I note and check if srs save as a join srs and if it course: enroll as a course
-     3. function `messageReturn()` is return client (server to client)
+     3. Function `messageReturn()` is return client (server to client)
            - Just return to the message page view if it is successful or not
-     4. function `messageReturnBtn()` return to the profile page with an updated status
+     4. Function `messageReturnBtn()` return to the profile page with an updated status
            - Its a button action on the message page
            - users to update user state 
      

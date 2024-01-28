@@ -18,7 +18,7 @@ Saudi Retina Group (SRG) is a scientific retina-specialized group under the umbr
   4. **Manage Guest Speaker:** Add by a single page and manage from dashboard(edit,delete,accept,send certificate), And view in website.
 
 - **Payment Gateway Integration:**
-  1. Symposium features a secure and seamless payment gateway for users to join and also for enroll in courses.
+  1. Symposium features a secure and seamless payment gateway with **Paytabs** for users to join and also for enroll in courses.
   2.  **Subscription Management:** Admin can view all payment transactions.
 
 -****
@@ -62,10 +62,27 @@ Get into the command prompt, type the given command, and begin installing the [s
 - use to extract all abstracts as a file Excel, [Laravel-excel-documentation](https://docs.laravel-excel.com/3.1/getting-started/).
 
 ****
-### **third:** JWT authentication
-- use to extract all abstracts as a file Excel, [Laravel-excel-documentation](https://docs.laravel-excel.com/3.1/getting-started/).
+### **4th:** JWT authentication
+- use to make authentication Api, [Laravel-JWT-Authentication](https://www.positronx.io/laravel-jwt-authentication-tutorial-user-login-signup-api/).
 
-
+****
+### **5th:** Payment gateway (Paytabs)
+- Start by looking forward to [Laravel Package Integration Manual](https://support.paytabs.com/en/support/solutions/articles/60000710700-laravel-package).
+-  first get a paytabs account to integrate it with SRS project and follow the steps:
+   1. Open the account from Developers -> key management -> Add new key
+        - Create a new key with type standard API key
+        - Then made the integration key that u created into **set as default signature key**
+        - now u have **Server Key** and **Client Key**
+   3. To manage the configuration you should look forward to `.env`
+      ```shell
+      paytabs_profile_id=Your-Profile-id
+      paytabs_server_key=Server-key
+      paytabs_currency=The-currency-you-registered-in-with-PayTabs-account---example:SAR
+      paytabs_region=The-region-you-registered-in-with-PayTabs-account---example:SAU
+      PAYTABS_MERCHANT_ID=from-profile
+      PAYTABS_SECRET_KEY=Client-Key
+      ```
+ ****
 
 
 

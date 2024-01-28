@@ -23,22 +23,7 @@ Saudi Retina Group (SRG) is a scientific retina-specialized group under the umbr
 
 -****
 
-- [Installation](#2-installation)
-- [Configuration](#3-configuration)
-- [Usage](#4-usage)
-- [Database](#5-database)
-- [Models](#6-models)
-- [Controllers](#7-controllers)
-- [Views](#8-views)
-- [Routes](#9-routes)
-- [Middleware](#10-middleware)
-- [Testing](#11-testing)
-- [Troubleshooting](#12-troubleshooting)
-- [Contributing](#13-contributing)
-- [License](#14-license)
-   
-
-# 2-Package uses
+# 2-Main Topics
 
 ### **First:** Laravel UI
 Laravel provided bootstrap scaffolding located in the `laravel/ui` Composer package, which may be installed using Composer. Now we have to install laravel/ui package using the following command.

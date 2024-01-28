@@ -82,6 +82,40 @@ Get into the command prompt, type the given command, and begin installing the [s
       PAYTABS_MERCHANT_ID=from-profile
       PAYTABS_SECRET_KEY=Client-Key
       ```
+
+   4. the main object to create a get page gateway payment to paytabs
+       ```php
+       $pay = paypage::sendPaymentCode('all')
+            ->sendTransaction('sale','ecom')
+            ->sendCart($card_id,$card_price,$card_description)
+            ->sendCustomerDetails($name, $email, $phone, $street1 = null, $city = null, $state = null, $country = null, $zip = null, $ip= null)
+            ->sendShippingDetails('true', $name, $email, $phone, null, $city = null, $state = null, $country = null, $zip = null, $ip = null)
+            ->sendHideShipping($on = true)
+            ->sendURLs($return , $callbackApi)
+            ->sendLanguage('en')
+            ->sendFramed($on = false)
+            ->create_pay_page(); // to initiate payment page
+        return $pay ;
+      ```
+      - U can get details and explanations for each method from this [document](https://support.paytabs.com/en/support/solutions/articles/60000778145-step-3-laravel-package-initiating-the-payment).
+      - **Note:** the method `sendTransaction()` has 2 parameters
+           - **First:** takes only `sale` or `auth`
+           - **Second:** Takes only `ecom` or `recurring`
+
+- How did handle the payment functions in the project?
+     - in the trait `PaymentTrait`  
+     1. function `paymentPage()` is used to get the payment page
+           - called if from enroll courses `CourseController`->`enroll()` or join srs `PaymentController`->`joinSRSPayment()`.
+           - **Note:** The `card_description` used for taking a string like "srs,course,2" means: srs: to join srs, course: enroll course id = 2.
+     2. function `respondMethodPaymentApi()` is a callback API (server to server)
+           - Save the transaction details with all status
+           -  split the description as I note and check if srs save as a join srs and if it course: enroll as a course
+     3. function `messageReturn()` is return client (server to client)
+           - Just return to the message page view if it is successful or not
+     4. function `messageReturnBtn()` return to the profile page with an updated status
+           - Its a button action on the message page
+           - users to update user state 
+     
  ****
 
 

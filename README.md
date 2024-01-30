@@ -49,8 +49,14 @@ Get into the command prompt, type the given command, and begin installing the [s
 ### **4th:** JWT authentication
 - use to make authentication Api, [Laravel-JWT-Authentication](https://www.positronx.io/laravel-jwt-authentication-tutorial-user-login-signup-api/).
 
+
 ****
-### **5th:** Payment gateway (Paytabs)
+### **5th:** Google reCAPTCHA
+- Add Google reCAPTCHA to many forms, [Google-reCAPTCHA](https://www.bronco.co.uk/our-ideas/how-to-add-google-recaptcha-to-a-form-phphtml/).
+
+
+****
+### **6th:** Payment gateway (Paytabs)
 - Start by looking forward to [Laravel Package Integration Manual](https://support.paytabs.com/en/support/solutions/articles/60000710700-laravel-package).
 -  first get a paytabs account to integrate it with SRS project and follow the steps:
    1. Open the account from Developers -> key management -> Add new key

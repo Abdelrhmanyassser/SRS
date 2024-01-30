@@ -1,4 +1,4 @@
-# SRSG- Saudi Retina Group
+# SRG- Saudi Retina Group
 
 Saudi Retina Group (SRG) is a scientific retina-specialized group under the umbrella of the Saudi Ophthalmology Society (SOS).
 
@@ -21,7 +21,6 @@ Saudi Retina Group (SRG) is a scientific retina-specialized group under the umbr
   1. Symposium features a secure and seamless payment gateway with **Paytabs** for users to join and also for enroll in courses.
   2.  **Subscription Management:** Admin can view all payment transactions.
 
--****
 
 # 2-Main Topics
 
